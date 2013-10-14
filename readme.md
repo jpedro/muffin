@@ -5,7 +5,7 @@ Muffin is a utility belt of functions for vim.
 
 ## Installation
 
-Muffin can be easily installed with `vundle`. Add this line after `call vundle#rc()`:
+Muffin can be easily installed with [vundle](https://github.com/gmarik/vundle). Add this line after `call vundle#rc()`:
 
 ```vim
 Bundle 'ptdorf/muffin'
