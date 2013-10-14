@@ -18,7 +18,6 @@ function! muffin#ShowSyntax()
      let tid1 = synIDtrans(id1)
 
      if synIDattr(id1, "name") != ""
-      "let synid = "group: " . synIDattr(id1, "name")
       let synid = synIDattr(id1, "name")
       if (tid1 != id1)
            "let synid = synid . '->' . synIDattr(tid1, "name")
@@ -64,19 +63,15 @@ function! muffin#ShowSyntax()
      endif
 
      let message = synid . guifg . guibg . gui
-     "let message = guifg . guibg . gui
      if message == ""
       echohl WarningMsg
       let message = "<no syntax group here>"
       return
      endif
 
-     "echohl StatusLine
      let stack = muffin#GetStack()
-     "call remove(stack, -1)
      let message = (len(stack) ? join(stack, " / ") : "(none)") . "    " . message
      echo message
-     "echohl None
 endfunction
 
 function! muffin#GetStack()
@@ -88,10 +83,5 @@ function! muffin#GetStack()
 endfunction
 
 function! muffin#ShowTrailing()
-    let s:show_trailing
-    if s:show_trailing
-        echom "OK"
-    else
-        echom "NOT OK"
-    endif
+    echom "OK"
 endfunction
