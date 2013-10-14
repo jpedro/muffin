@@ -1,5 +1,5 @@
 
-function! muffin#trimSpaces()
+function! muffin#TrimSpaces()
     "" Save last search, and cursor position.
     let save_cursor = getpos(".")
     let old_query = getreg('/')
@@ -8,7 +8,7 @@ function! muffin#trimSpaces()
     call setreg('/', old_query)
 endfunction
 
-function! muffin#showSyntax()
+function! muffin#ShowSyntax()
      let synid = ""
      let guifg = ""
      let guibg = ""
@@ -72,17 +72,26 @@ function! muffin#showSyntax()
      endif
 
      "echohl StatusLine
-     let stack = muffin#getStack()
+     let stack = muffin#GetStack()
      "call remove(stack, -1)
      let message = (len(stack) ? join(stack, " / ") : "(none)") . "    " . message
      echo message
      "echohl None
 endfunction
 
-function! muffin#getStack()
+function! muffin#GetStack()
     if !exists("*synstack")
         return synIDattr(synID(line('.'), col('.'), 1), 'name')
     else
         return map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+    endif
+endfunction
+
+function! muffin#ShowTrailing()
+    let s:show_trailing
+    if s:show_trailing
+        echom "OK"
+    else
+        echom "NOT OK"
     endif
 endfunction
