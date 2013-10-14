@@ -2,6 +2,8 @@
 
 Muffin is a utility belt of functions and a dark 256 colour theme for vim.
 
+![muffin vim theme](https://hostr.co/file/ggGdWxiGd5eE/muffin.png)]
+
 
 ### Installation
 
