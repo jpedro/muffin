@@ -1,15 +1,17 @@
 # Muffin
 
-Muffin is a utility belt of functions for vim and a dark 256 colour theme.
+Muffin is a utility belt of functions and a dark 256 colour theme for vim.
 
 
 ## Installation
 
-Muffin can be easily installed with [vundle](https://github.com/gmarik/vundle). Add this line after `call vundle#rc()`:
+Muffin can be easily installed with [vundle](https://github.com/gmarik/vundle).
+Add this line after `call vundle#rc()`:
 
 ```vim
 Bundle 'ptdorf/muffin'
 ```
+
 
 ## License
 
