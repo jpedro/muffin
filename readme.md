@@ -23,4 +23,3 @@ Muffin is released under the [MIT License](http://opensource.org/licenses/MIT).
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ptdorf/vim-muffin/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
