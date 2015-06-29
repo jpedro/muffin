@@ -2,7 +2,7 @@
 
 Muffin is a utility belt of functions and a dark colour theme for vim.
 
-![muffin vim theme](https://hostr.co/gfFcspK4rR50)
+![muffin vim theme](screenshot.png)
 
 ### Installation
 
