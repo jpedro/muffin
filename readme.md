@@ -13,4 +13,4 @@ Add this line after `call vundle#rc()`:
 Bundle 'ptdorf/muffin'
 ```
 
-Then launch `vim`, run `:BundleInstall` (or `vim +BundleInstall +qall`).
+Then launch `vim`, run `:PluginInstall` (or `vim +PluginInstall +qall`).
