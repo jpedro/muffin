@@ -5,6 +5,7 @@ set t_Co=256
 hi clear
 syntax on
 syntax reset
+syntax match nonAscii "[^\x00-\x7F]"
 
 
 "Named Colors
@@ -30,6 +31,8 @@ hi  ColorBoldOrangeOnNone       ctermfg=208        cterm=bold          ctermbg=n
 hi  ColorDarkGrayOnNone         ctermfg=239        cterm=none          ctermbg=none
 hi  ColorInverseRed             ctermfg=Red        cterm=inverse,bold
 hi  BackColorGrayLight          ctermbg=236        cterm=none
+hi  ColorAlert                  ctermbg=196        cterm=bold
+
 
 "Generic Groups
 hi! link Normal                 ColorNone
@@ -60,6 +63,7 @@ hi! link StatusLineNC           ColorDarkGrayOnNone
 "hi!      User1                  term=inverse,bold cterm=inverse,bold ctermfg=Yellow
 "hi!      ColorColumn            ctermbg=238
 hi! link ColorColumn            BackColorGrayLight
+
 
 "Specific Groups
 hi! link vimFuncKey             ColorBlue
@@ -110,5 +114,6 @@ hi! link cppStatement           ColorBlue
 hi! link cType                  ColorGreen
 hi! link sqlStatement           ColorMagenta
 hi! link sqlKeyword             ColorMagenta
+hi! link nonAscii               ColorAlert
 
 hi       clear                  SignColumn
