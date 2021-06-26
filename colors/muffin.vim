@@ -63,6 +63,8 @@ hi! link StatusLineNC           ColorDarkGrayOnNone
 "hi!      User1                  term=inverse,bold cterm=inverse,bold ctermfg=Yellow
 "hi!      ColorColumn            ctermbg=238
 hi! link ColorColumn            BackColorGrayLight
+hi! CursorLine                  cterm=None ctermfg=None ctermbg=236
+hi! CursorLineNR                cterm=bold ctermfg=208 ctermbg=none
 
 
 "Specific Groups
