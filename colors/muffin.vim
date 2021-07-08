@@ -50,7 +50,6 @@ hi! link Comment                ColorGray
 hi! link String                 ColorYellow
 hi! link Number                 ColorGreen
 hi! link Constant               ColorMagenta
-hi! link LineNr                 ColorGray
 hi! link NonText                ColorGray
 hi! link NonText                ColorMagenta
 hi! link SpecialKey             ColorMagenta
@@ -60,9 +59,12 @@ hi! link Todo                   ColorGray
 hi! link Braces                 ColorNone
 hi! link StatusLine             ColorOrangeOnNone
 hi! link StatusLineNC           ColorDarkGrayOnNone
-"hi!      User1                  term=inverse,bold cterm=inverse,bold ctermfg=Yellow
-"hi!      ColorColumn            ctermbg=238
 hi! link ColorColumn            BackColorGrayLight
+
+hi! LineNr                      cterm=None  ctermbg=None  ctermfg=239
+hi! CursorLine                  cterm=None  ctermbg=236   ctermfg=None
+hi! CursorLineNR                cterm=bold  ctermbg=None  ctermfg=255
+"hi!      User1                  term=inverse,bold cterm=inverse,bold ctermfg=Yellow
 
 
 "Specific Groups
