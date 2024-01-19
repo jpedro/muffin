@@ -13,4 +13,4 @@ Add this line after `call vundle#begin()`:
 Bundle 'jpedro/muffin'
 ```
 
-Then launch `vim`, run `:PluginInstall` (or `vim +PluginInstall +qall`).
+Then run `vim +PluginInstall +qall` (or `:PluginInstall` inside vim).
