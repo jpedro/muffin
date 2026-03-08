@@ -8,7 +8,7 @@ function! muffin#trim()
     call setreg('/', old_query)
 endfunction
 
-function! muffin#syntax()
+function! muffin#show()
     let synid = ""
     let guifg = ""
     let guibg = ""
@@ -44,22 +44,22 @@ function! muffin#syntax()
         let guibg = " ctermbg=" . synIDattr(tid1, "bg#")
     endif
     if (synIDattr(tid1, "bold"     ))
-        let gui   = gui . ",bold"
+        let gui = gui . ",bold"
     endif
     if (synIDattr(tid1, "italic"   ))
-        let gui   = gui . ",italic"
+        let gui = gui . ",italic"
     endif
     if (synIDattr(tid1, "reverse"  ))
-        let gui   = gui . ",reverse"
+        let gui = gui . ",reverse"
     endif
     if (synIDattr(tid1, "inverse"  ))
-        let gui   = gui . ",inverse"
+        let gui = gui . ",inverse"
     endif
     if (synIDattr(tid1, "underline"))
-        let gui   = gui . ",underline"
+        let gui = gui . ",underline"
     endif
     if (gui != ""                  )
-        let gui   = substitute(gui, "^,", " gui=", "")
+        let gui = substitute(gui, "^,", " gui=", "")
     endif
 
     let message = synid . guifg . guibg . gui
@@ -82,6 +82,6 @@ function! muffin#stack()
     endif
 endfunction
 
-function! muffin#trailing()
+function! muffin#test()
     echom "OK"
 endfunction
